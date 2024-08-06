@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function concat(array1, array2) {
+            var newArray = new Array(array1.length + array2.length);
+
+            for (let i = 0; i < array1.length; i++) {
+                newArray[i] = array1[i];
+            }
+
+            for (let a = 0; a < array2.length; a++) {
+                newArray[array1.length + a] = array2[a];
+            }
+
+            return newArray;
+        }
+
+        var array1 = [1, 2, 3];
+        var array2 = [4, 5, 6];
+
+        console.log(concat(array1, array2));
+    </script>
+
+</body>
+
+</html>
